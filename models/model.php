@@ -1,9 +1,15 @@
 <?php
+include_once '../connet.php';
 
-//$arrayName = array('book1','book2','book3' );
 
-	$_GET['book']="book";
+function book ($num,$con){
 
+	$sql="SELECT * FROM book WHERE  id=".$num."";
+	$result = $con->query($sql);
+	$row = $result->fetch_assoc();
+
+	return $row['name'];
+}
 
 
 ?>

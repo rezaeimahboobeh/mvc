@@ -5,9 +5,10 @@ echo"<!DOCTYPE html>
 	<title>libarary</title>
 </head>
 <body>
-<form action='../models/model.php' method='GET'>
-Welcome";  echo $_GET["book"]; echo"<br>
-
+<form action='../controllers/controller.php' method='GET'>
+<h1> enter your book number</h1>
+<input name='name'></input>
+<input type='submit'></input>
 
 </form>
 
@@ -16,5 +17,6 @@ Welcome";  echo $_GET["book"]; echo"<br>
 </body>
 </html>
 ";
+
 ?>
 
