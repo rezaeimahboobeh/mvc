@@ -1,8 +1,8 @@
 <?php
-include_once '../connet.php';
+//include_once '../connet.php';
 
-
-function book ($num,$con){
+ class model{
+ public function book ($num,$con){
 
 	$sql="SELECT * FROM book WHERE  id=".$num."";
 	$result = $con->query($sql);
@@ -11,5 +11,5 @@ function book ($num,$con){
 	return $row['name'];
 }
 
-
+}
 ?>
